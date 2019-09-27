@@ -1,0 +1,140 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "blackjack experiment",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hello",
+                        "how are you",
+                        "say hi world",
+                        "say hi",
+                        "hi",
+                        "say hello world",
+                        "say hello"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetCodeIntent",
+                    "slots": [],
+                    "samples": [
+                        "code",
+                        "get code",
+                        "get confirmation code"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": [
+                        "again",
+                        "say again",
+                        "repeat"
+                    ]
+                },
+                {
+                    "name": "PlayIntent",
+                    "slots": [],
+                    "samples": [
+                        "play"
+                    ]
+                },
+                {
+                    "name": "DrawIntent",
+                    "slots": [],
+                    "samples": [
+                        "draw"
+                    ]
+                },
+                {
+                    "name": "BetIntent",
+                    "slots": [
+                        {
+                            "name": "bet_amount",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "bet {bet_amount} dollars",
+                                "i bet {bet_amount} dollars",
+                                "{bet_amount} dollars",
+                                "bet {bet_amount} ",
+                                "{bet_amount} ",
+                                "I bet {bet_amount}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "{bet_amount}",
+                        "bet {bet_amount}",
+                        "I bet {bet_amount}",
+                        "I bet {bet_amount} dollars"
+                    ]
+                },
+                {
+                    "name": "HitIntent",
+                    "slots": [],
+                    "samples": [
+                        "hit"
+                    ]
+                },
+                {
+                    "name": "StandIntent",
+                    "slots": [],
+                    "samples": [
+                        "stand"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "BetIntent",
+                    "delegationStrategy": "SKILL_RESPONSE",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "bet_amount",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.801614122009.460210864878"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.801614122009.460210864878",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sorry, I did not get the amount that you want to bet. Can you say it again?"
+                    }
+                ]
+            }
+        ]
+    }
+}

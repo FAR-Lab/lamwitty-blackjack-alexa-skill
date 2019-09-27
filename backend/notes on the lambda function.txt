@@ -1,0 +1,18 @@
+"""
+The different attributes are:
+'state' - can be:
+        'waiting for game to start',
+        'waiting for bet',
+        'game on',
+        'waiting for next round',
+		'game over',
+        
+'deck' - the decks shuffled in the current round. permutation of the deck
+'bet_amount' - the amount that the player is betting
+'user_cards' - the cards at the users hand
+'dealer_cards' - the cards that the dealer has, the first one is the facedown card
+'code' - the session code for logging and confirmation
+'money' - the money that the current player has in the bank
+"""
+
+arn:aws:lambda:us-east-1:963403783635:function:1ffe837a-b0a0-4f99-939a-36b4fc8575e7:Release_0
