@@ -41,4 +41,11 @@ and use the AWS console (GUI) for uploading it, or (*The prefered way in my opin
 I wrote down one in .bat script(for windows, using 7zip), called *update_function.bat* - it is better because you might find yourself doing it alot.
 AWS CLI - https://aws.amazon.com/cli/
 
+## Some changes that still need to be done - 
+
+* Cut down on the words, so the game will be faster
+* Publish the skill so users can use it
+
+ 
+
 
