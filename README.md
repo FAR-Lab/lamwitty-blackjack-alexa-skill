@@ -17,7 +17,7 @@ documentation for it: https://developer.amazon.com/docs/smapi/interaction-model-
 all you need to do is:
 
 1. find the **Endpoint** tab on your developer console
-2. copy the Skill ID there and in your lambda function configuration you shoul add a triger for alexa skill, and enter that skill ID there
+2. Copy the Skill ID there (from the info on the endpoint tab) and paste it your lambda function configuration. For this, open AWS managament Console, search for Lambda service, pick the link that runs the backend for the app, click the designer tab, add trigger, select Alexa Skill Kit, and paste the code in there. You only need to do this if you change the back-end. 
 3. copy your lambda function ARN and past it on the Default region option
 
 ## Backend:
